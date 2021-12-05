@@ -19,6 +19,7 @@ jobs:
       - name: Run the lint script
         run: npm run lint
   test:
+    needs: lint
     runs-on: ubuntu-latest
 
     steps:
